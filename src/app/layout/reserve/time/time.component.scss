@@ -1,0 +1,102 @@
+.box {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: myfont-bold !important;
+    background-color: #dad9d8;
+}
+
+span {
+    font-family: myfont-bold !important;
+    font-size: 16px;
+}
+
+span.day {
+    font-family: myfont-num !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+:host::ng-deep .p-button {
+    font-size: 14px;
+    font-family: myfont-bold !important;
+    padding: 8px 20px;
+}
+
+:host::ng-deep .number .p-button {
+    padding: 8px 40px;
+}
+
+:host::ng-deep .submit .p-button {
+    background-color: #aa8b77;
+    border-color: #aa8b77;
+    border-radius: 30px;
+}
+
+:host::ng-deep .submit .p-button:hover {
+    background-color: #aa8b77;
+    border-color: #aa8b77;
+}
+
+:host::ng-deep .p-radiobutton-label::after {
+    content: ' ساعت';
+}
+
+:host::ng-deep .p-radiobutton-label {
+    margin-right: 15px !important;
+    font-family: myfont-num !important;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+:host::ng-deep .p-radiobutton .p-radiobutton-box:hover {
+    border-color: var(--color2);
+}
+
+:host::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight {
+    border-color: var(--color2);
+    background-color: var(--color2);
+}
+
+:host::ng-deep .p-message .p-message-detail {
+    font-size: 16px;
+    font-family: myfont !important;
+}
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+    font-size: 16px;
+    font-family: myfont !important;
+    margin-right: 10px;
+}
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+    font-size: 16px;
+    font-family: myfont !important;
+}
+
+:host::ng-deep .p-dropdown {
+    border-radius: 10px;
+    border-color: rgba(#aa8b77, .8);
+}
+
+:host::ng-deep .p-dropdown.p-dropdown-clearable .p-dropdown-label {
+    text-align: center;
+    font-family: myfont-num !important;
+
+}
+
+:host::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    font-size: 16px;
+    font-family: myfont-num !important;
+}
+
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+textarea {
+    width: 100% !important;
+    font-family: myfont-num !important;
+}

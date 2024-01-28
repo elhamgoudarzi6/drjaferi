@@ -1,0 +1,27 @@
+<p-toast position="center"></p-toast>
+<section class="form">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 col-sm-12 mb-3">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-sm-12 mb-3">
+                    <label class="form-label mb-2"> علت مراجعه به وکیل</label>
+                    <p-dropdown [options]="reason" (onChange)="getCases($event.value)" placeholder="انتخاب دسته بندی"
+                        [(ngModel)]="selectedReason"></p-dropdown>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-3">
+                    <label class="form-label mb-2">انتخاب نوع پرونده</label>
+                    <p-dropdown [options]="case" placeholder="انتخاب دسته بندی"
+                        [(ngModel)]="selectedDoctype"></p-dropdown>
+                </div>
+                <div class="col-lg-4 col-sm-12 mb-3">
+                    <label class="form-label mb-2">انتخاب نوع مشاوره </label>
+                    <p-dropdown [options]="kind" placeholder="انتخاب دسته بندی" [(ngModel)]="selectedConsultationtype"
+                        optionValue="title" optionLabel="title"></p-dropdown>
+                </div>
+                <div pRipple class="submit col-lg-12 text-center mt-2">
+                    <p-button label="مرحله بعد " (onClick)="sendInfo()"></p-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

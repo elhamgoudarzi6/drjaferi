@@ -1,0 +1,73 @@
+.form{
+    margin-top: 30px;
+    padding: 0 40px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-family: myfont-bold !important;
+    color: #777;
+    margin-left: 10px;
+}
+
+:host::ng-deep .p-button {
+    font-size: 14px;
+    font-family: myfont-bold !important;
+    background-color: #aa8b77;
+    border-color: #aa8b77;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+:host::ng-deep .p-button:hover {
+    background-color: #aa8b77;
+    border-color: #aa8b77;
+}
+
+input {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: myfont-bold !important;
+}
+
+.num input {
+    font-family: myfont-num !important;
+}
+input::placeholder {
+    color: #777;
+    font-size: 12px;
+    padding-right: 5px;
+    font-family: myfont-bold !important;
+}
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+    width: 100% !important;
+}
+
+
+textarea {
+    font-family: myfont !important;
+    font-size: 14px;
+}
+:host::ng-deep textarea::placeholder {
+    font-family: myfont !important;
+    font-size: 14px;
+}
+.alert-danger{
+    font-family: myfont-bold !important;
+    font-size: 14px;
+}
+
+
+@media (max-width: 991px) {   
+   .form{
+       padding: 0 30px;
+   }
+}

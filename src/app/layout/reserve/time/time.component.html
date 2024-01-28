@@ -1,0 +1,28 @@
+<p-toast position="center"></p-toast>
+<section class="container">
+    <div class="text-center mb-5 mt-5">
+        <span>{{selectedDay}} :</span>
+        <span class="day">{{selectedDate}}</span>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 mb-5">
+            <p-dropdown emptyFilterMessage="نتیجه ای یافت نشد" [filter]="true" filterBy="date" [options]="plans"
+                optionLabel="date" (onChange)="onChangeDate($event)" placeholder="تاریخ مراجعه">
+            </p-dropdown>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-2 mb-2" *ngFor="let item of selectedTimes">
+            <div class="box">
+                <p-radioButton [disabled]="item.status===false" name="groupname" [value]="item.time"
+                    [(ngModel)]="selectedTime" [label]="item.time">
+                </p-radioButton>
+            </div>
+        </div>
+    </div>
+    <div pRipple class="submit col-lg-12 text-center mt-4">
+        <div pRipple class="submit col-lg-12 text-center mt-2">
+            <p-button label="مرحله بعد " (onClick)="sendTime()"></p-button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+<p-breadcrumb [model]="[{icon:'pi pi-chevron-left',label: 'داشبرد'}]"
+    [home]="{ icon: 'pi pi-home', routerLink: '/user' }"></p-breadcrumb>
+
+<div class="px-4 py-4 md:px-6 lg:px-4">
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/user/profile">
+                <div class="flex justify-content-between mb-3">
+                    <span class="block text-500 mb-3">حساب کاربری</span>
+                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-users text-blue-500 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/user/reserve">
+                <div class="flex justify-content-between mb-3">
+                    <span class="block text-500 mb-3">وقت مشاوره</span>
+                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-clock text-orange-500 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/user/payment">
+                <div class="flex justify-content-between mb-3">
+                    <span class="block text-500 mb-3">لیست تراکنش</span>
+                    <div class="flex align-items-center justify-content-center bg-cyan-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-dollar text-cyan-500 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/user/profile">
+                <div class="flex justify-content-between mb-3">
+                    <span class="block text-500 mb-3">تنظیمات</span>
+                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-cog pi-spin text-purple-500 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

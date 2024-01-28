@@ -1,0 +1,23 @@
+<section class="form">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 text-center mb-3" *ngIf="result!=undefined">
+            <div class="success" *ngIf="result">
+                <i class="pi pi-check-circle"></i>
+                <h1> پرداخت با موفقیت انجام شد</h1>
+                <p>وقت مشاوره ثبت شد بسیار خشنودیم که مرکز مشاوره را جهت مشاوره حقوقی انتخاب کردید.</p>
+            </div>
+            <div *ngIf="!result">
+                <i class="pi pi-exclamation-circle"></i>
+                <h1>پرداخت ناموفق</h1>
+                <p> متاسفانه مشکلی رخ داده است. لطفا مجددا تلاش کنید.</p>
+            </div>
+        </div>
+        <div *ngIf="result" pRipple class="col-lg-12 text-center mt-2">
+            <p-button label="پنل کاربری" routerLink="/user"></p-button>
+        </div>
+    </div>
+</section>
+<div class="text-center mt-5">
+    <p-progressSpinner *ngIf="result==undefined" [style]="{width: '50px', height: '50px'}" strokeWidth="5"
+        animationDuration=".8s"></p-progressSpinner>
+</div>

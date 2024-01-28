@@ -1,0 +1,106 @@
+.faq h1 {
+    font-family: myfont-bold !important;
+    font-size: 22px;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    background: none !important;
+    font-family: myfont-bold !important;
+    font-size: 14px;
+    border-radius: 10px;
+    color: var(--color-font);
+    border: var(--color1) 1px solid;
+    padding: 15px !important;
+}
+
+
+:host::ng-deep .p-accordion-content {
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: -4px;
+    font-family: myfont-bold !important;
+    font-size: 12px;
+    border: var(--color1) 1px solid !important;
+    border-top: none !important;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    padding-left: 30px !important;
+    color: var(--color1);
+    border-color: var(--color1) !important;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:focus-within {
+    box-shadow: none !important;
+    border-color: var(--color1) !important;
+    background-color: var(--color1) !important;
+    color: #fff;
+
+}
+
+:host::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    color: var(--color2);
+    border-color: var(--color1) !important;
+    color: #fff;
+    background-color: var(--color1) !important;
+
+}
+
+:host::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link .p-accordion-toggle-icon {
+    color: #fff;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link:hover {
+    border-color: var(--color1) !important;
+}
+
+@media (max-width: 991px) {
+    .hero-header {
+        padding: 6rem 0 9rem 0;
+    }
+
+    :host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+        font-size: 10px;
+    }
+
+    :host::ng-deep .p-accordion-content {
+        font-size: 10px;
+    }
+}
+
+.about {
+    margin: 20px 0;
+    padding-top: 50px;
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+
+h2 {
+    font-size: 23px;
+    font-family: myfont !important;
+    text-align: right;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    color: var(--color2);
+}
+
+h4 {
+    font-size: 18px;
+    font-family: myfont !important;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--color2);
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    color: #1a1918;
+    text-align: justify;
+    font-family: myfont !important;
+    font-size: 14px;
+}

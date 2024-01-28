@@ -1,0 +1,74 @@
+.login {
+  padding: 10%;
+}
+
+.card-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: var(--color1);
+  padding: 30px 0;
+}
+
+.icon img {
+  max-width: 70px;
+  opacity: .5;
+  filter: brightness(0) invert(1);
+}
+
+input {
+  font-size: 14px;
+  height: 45px;
+  border-radius: 30px;
+  font-family: myfont-num !important;
+  border:rgba( #aa8b77, .5) 1px solid;
+}
+
+.btn-login {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20%;
+  border-radius: 25px;
+  background: var(--color1);
+  font-family: myfont-bold !important;
+}
+
+.verify {
+  padding: 0 30px;
+  font-family: myfont-bold !important;
+  font-size: 14px;
+}
+
+input,
+:host::ng-deep .p-inputtext .p-inputtext {
+  width: 100% !important;
+}
+
+.p-float-label {
+  margin-bottom: 20px;
+}
+
+label {
+  right: 20px;
+  left: unset;
+  font-family: myfont !important;
+}
+
+.input-container {
+  padding: 9% 10%;
+}
+
+:host::ng-deep .p-message .p-message-detail {
+  font-size: 14px;
+  font-family: myfont !important;
+}
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+  font-size: 14px;
+  font-family: myfont !important;
+  margin-right: 10px;
+}

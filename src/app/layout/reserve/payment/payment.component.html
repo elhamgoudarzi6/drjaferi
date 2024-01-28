@@ -1,0 +1,13 @@
+
+<p-toast position="center"></p-toast>
+<section class="form">
+    <div class="row justify-content-center">
+                <div class="col-lg-12 text-center mb-3">
+                    <h1>حق مشاوره {{price/10|number}} تومان میباشد</h1>
+                    <p>لطفا جهت فرآیند پرداخت روی دکمه پرداخت کلیک کنید و ثبت نوبت خود را نهایی کنید</p>
+                </div>
+                <div pRipple class="col-lg-12 text-center mt-2">
+                    <p-button label="پرداخت" (onClick)="onPayment()"></p-button>
+                </div>
+    </div>
+</section>
