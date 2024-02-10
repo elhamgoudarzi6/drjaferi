@@ -12,6 +12,5 @@ export const routes: Route[] = [{
     { path: 'reserve', component: ReserveComponent },
     { path: 'payment', component: PaymentComponent },
     { path: 'profile', component: ProfileComponent },
-
   ],
 }];

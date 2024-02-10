@@ -88,27 +88,27 @@ export class LoginComponent implements OnInit {
     } else {
       this.display = true;
       this.code = this.randomNumber();
-      // let data = {
-      //   "Mobile": this.form.value.mobile,
-      //   "TemplateId": 100000,
-      //   "Parameters": [
-      //     {
-      //       "Name": "Code",
-      //       "Value": this.code
-      //     }
-      //   ]
-      // };
-      // this.service.sendSms(data).subscribe((result: any) => {
-      //   if (result.status === 1) {
+      let data = {
+        "Mobile": this.form.value.mobile,
+        "TemplateId": 100000,
+        "Parameters": [
+          {
+            "Name": "Code",
+            "Value": this.code
+          }
+        ]
+      };
+      this.service.sendSms(data).subscribe((result: any) => {
+        if (result.status === 1) {
       this.invalidSMS = false;
       this.timer = 90;
       this.resendSMS = false;
       clearInterval(this.interval);
       this.startTimer();
-      //   } else {
-      //     console.log("شماره را به درستی وارد کنید");
-      //   }
-      // });
+        } else {
+          console.log("شماره را به درستی وارد کنید");
+        }
+      });
     }
   }
 
@@ -143,3 +143,6 @@ export class LoginComponent implements OnInit {
   }
 
 }
+
+
+//KjhpOp5jOkLKQvEcxhxEibS8GDwQvRIHnBVJTetsmG3XwkSB5K7ApOeoedVxgd4i

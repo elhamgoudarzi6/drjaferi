@@ -11,9 +11,12 @@
                 <h1>پرداخت ناموفق</h1>
                 <p> متاسفانه مشکلی رخ داده است. لطفا مجددا تلاش کنید.</p>
             </div>
-        </div>
-        <div *ngIf="result" pRipple class="col-lg-12 text-center mt-2">
-            <p-button label="پنل کاربری" routerLink="/user"></p-button>
+            <div *ngIf="result" pRipple class="text-center mt-5">
+                <p-button label="پنل کاربری" routerLink="/user"></p-button>
+            </div>
+            <div *ngIf="!result" pRipple class="text-center mt-5">
+                <p-button label="بازگشت" routerLink="/reserve"></p-button>
+            </div>
         </div>
     </div>
 </section>
