@@ -19,7 +19,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   transition: 0.3s;
-  background: var(--color1);
+  background: var(--color2);
   color: #fff;
   font-family: myfont-bold !important;
 }
@@ -97,7 +97,7 @@
 
 .sticky .book-a-table-btn {
   color: #fff;
-  background: #b6a49b;
+  background: var(--color2);
 }
 
 .sticky img {

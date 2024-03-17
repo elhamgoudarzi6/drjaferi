@@ -11,7 +11,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background: var(--color1);
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .icon img {
@@ -36,7 +36,9 @@ input {
   background: var(--color1);
   font-family: myfont-bold !important;
 }
-
+.btn-login:hover {
+  background: var(--color2);
+}
 .verify {
   padding: 0 30px;
   font-family: myfont-bold !important;

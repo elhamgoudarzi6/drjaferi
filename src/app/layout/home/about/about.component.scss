@@ -1,33 +1,48 @@
 .featured-services .service-item {
     margin-top: 5px;
-    padding: 25px;
-    transition: all ease-in-out 0.4s;
+    padding: 25px 30px;
     height: 100%;
-    border-radius: 15px;
-    background: var(--color1);
-    color: #fff;
-    box-shadow: 1px 1px 5px 1px rgba(#aa8b77, 0.8);
+    border-radius: 10px;
     cursor: pointer;
+    text-align: center;
+    background: linear-gradient(to right, var(--color1) 50%, #fbfaf7 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: all .6s ease-out;
 }
 
 .featured-services .service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 1px 1px 5px 3px rgba(#aa8b77, 0.8);
+    color: #fff;
+    // transform: scaleX(-1);
+    background-position: left;
+}
+
+.featured-services .service-item:hover .icon i,
+.featured-services .service-item:hover h4 {
+    color: #fff;
+}
+
+.featured-services .service-item img {
+    margin-bottom: 10px;
+}
+
+.featured-services .service-item:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .featured-services .service-item .icon {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .featured-services .service-item .icon i {
-    color: #fff;
-    font-size: 34px;
-    transition: 0.3s;
+    color: var(--color1);
+    font-size: 42px;
 }
 
 .featured-services .service-item h4 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
+    color: var(--color-title);
     font-family: myfont-bold !important;
 }
 
@@ -35,5 +50,24 @@
     font-size: 14px;
     margin-bottom: 0;
     text-align: justify;
-    font-family: myfont-light !important;
+    line-height: 30px;
 }
+
+// .hover-div {
+//     position: relative;
+// }
+
+// .hover-div::after {
+//     content: "Text that appears on hover";
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: opacity 0.3s ease;
+// }
+
+// .hover-div:hover::after {
+//     visibility: visible;
+//     opacity: 1;
+// }

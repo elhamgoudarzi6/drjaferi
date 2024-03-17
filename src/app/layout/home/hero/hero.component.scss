@@ -1,7 +1,8 @@
 .hero {
   width: 100%;
-  height: 100vh;
-  background-size: cover;
+  padding: 30px;
+  background-color: #fcf7f1;
+  border-radius: 10px;
 }
 
 .hero h1 {
@@ -33,7 +34,7 @@
 
 .hero .btn-get-started:hover {
   transform: translateX(5px);
-  box-shadow: 1px 1px 5px 1px rgba(#aa8b77, 0.8);
+  box-shadow: 1px 1px 5px 1px rgba(#b69a68, 0.5);
 }
 
 
